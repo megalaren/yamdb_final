@@ -14,7 +14,7 @@ services:
       - ./.env
 
   web:
-    image: megalaren/api_yamdb_web:v1.0
+    image: megalaren/api_yamdb_web:latest
     volumes:
       - static_value:/code/static/
       - media_value:/code/media/
