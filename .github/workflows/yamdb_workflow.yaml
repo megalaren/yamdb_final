@@ -25,7 +25,7 @@ jobs:
     - name: Test with flake8 and pytest
       run: |
         touch .env
-        echo SECRET_KEY=${{ secrets.SECRET_KEY }} >> .env
+        echo SECRET_KEY="${{ secrets.SECRET_KEY }}" >> .env
         python -m flake8
         pytest
 
@@ -74,7 +74,7 @@ jobs:
             echo POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }} >> .env
             echo DB_HOST=${{ secrets.DB_HOST }} >> .env
             echo DB_PORT=${{ secrets.DB_PORT }} >> .env
-            echo SECRET_KEY=${{ secrets.SECRET_KEY }} >> .env
+            echo SECRET_KEY="${{ secrets.SECRET_KEY }}" >> .env
             sudo docker-compose up -d
 
   send_message:
