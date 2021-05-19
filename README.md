@@ -1,4 +1,5 @@
-https://github.com/megalaren/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg
+![Status workflow](https://github.com/megalaren/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
+
 ## Проект YaMDb
 Проект YaMDb собирает отзывы (Review) пользователей на произведения (Title). 
 Произведения делятся на категории: «Книги», «Фильмы», «Музыка». 
