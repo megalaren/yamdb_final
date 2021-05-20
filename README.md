@@ -29,12 +29,12 @@
 ```docker-compose exec web bash```
 - Запустите миграции:  
 ```python manage.py migrate --noinput```
+- Загрузите данные в базу данных:  
+```python manage.py loaddata fixtures.json```
 - Создайте суперпользователя:  
 ```python manage.py createsuperuser```
 - Соберите статику:  
 ```python manage.py collectstatic --no-input```
-- Загрузите данные в базу данных:  
-```python manage.py loaddata fixtures.json```
 
 Теперь проект доступен по адресу http://127.0.0.1/.
 ***
