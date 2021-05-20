@@ -1,4 +1,4 @@
-name: Django-app workflow
+name: yamdb_final workflow
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
     - name: Test with flake8 and pytest
       run: |
         touch .env
-        echo SECRET_KEY="${{ secrets.SECRET_KEY }}" >> .env # для работа тестов
+        echo SECRET_KEY="${{ secrets.SECRET_KEY }}" >> .env # для работы тестов
         python -m flake8
         pytest
 
