@@ -15,6 +15,7 @@ services:
 
   web:
     image: megalaren/api_yamdb_web:latest
+    restart: always
     volumes:
       - static_value:/code/static/
       - media_value:/code/media/
